@@ -48,6 +48,7 @@ const mutationObserver = new MutationObserver(() => {
 
       if (toRemove == null) {
         toRemove = findParentByClasses(wrapper, ['_4-u2', '_4-u8'], false);
+        toRemove = findParentByClasses(toRemove, ['_4-u2', '_4-u8'], true) || toRemove;
       }
 
       if (debug) {
