@@ -44,7 +44,11 @@ chrome.storage.local.get({
 const mutationObserver = new MutationObserver(() => {
 	for (let wrapper of document.querySelectorAll('div.userContentWrapper')) {
 		if (wrapper.firstChild.textContent.search(/corona[ ]?virus/i) >= 0) {
-			const toRemove = findParentByClasses(wrapper, ['_4-u2', '_4-u8']);
+			let toRemove = findParentByClasses(wrapper, ['_4-u2', '_4-u8']);
+
+			if (toRemove == null) {
+				toRemove = findParentByClasses(wrapper, ['_5va1', '_427x']);
+			}
 
 			if (debug) {
 				toRemove.style.border = '4px solid green';
