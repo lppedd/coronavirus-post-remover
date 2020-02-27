@@ -1,0 +1,22 @@
+* {
+    font: 12px Segoe UI, Consolas;
+}
+
+.divTable {
+    display: table;
+    width: 100%;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableCell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3px 10px;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
