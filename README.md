@@ -1,5 +1,7 @@
 ## Coronavirus Post Remover
 
+### [Download `.zip` archive][1]
+
 <img width="850" height="647" src="https://raw.githubusercontent.com/lppedd/coronavirus-post-remover/master/images/example.png" alt="Example">
 
 ### Installation
@@ -11,3 +13,5 @@ For that, see the below GIF.
 
 Now select the directory where you extracted the `.zip` plugin.  
 The plugin should be ready and visible in the upper-right corner (enabled only for Facebook domains).
+
+[1]: https://github.com/lppedd/coronavirus-post-remover/releases/download/0.1.0/coronavirus-post-remover.zip
