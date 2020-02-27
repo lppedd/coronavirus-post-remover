@@ -1,13 +1,13 @@
 window.onload = () =>
 	chrome.storage.local.get({
-		'debug': true
+		'cprDebug': false
 	}, settings => {
-		const debug = document.getElementById('debug');
-		debug.checked = settings['debug'];
+		const debug = document.getElementById('cprDebug');
+		debug.checked = settings['cprDebug'] || false;
 		debug.addEventListener('change', () => {
 				chrome.tabs.reload();
 				chrome.storage.local.set({
-					'debug': debug.checked
+					'cprDebug': !!debug.checked
 				}, () => console.log('Error changing debug mode'));
 			}
 		);
