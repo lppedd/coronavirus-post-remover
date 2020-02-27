@@ -1,5 +1,5 @@
-function containsAll(elements, elementsToCheck) {
-  if (elements.length !== elementsToCheck.length) {
+function containsAll(elements, elementsToCheck, strict) {
+  if (strict && elements.length !== elementsToCheck.length) {
     return false;
   }
 
@@ -44,10 +44,10 @@ chrome.storage.local.get({
 const mutationObserver = new MutationObserver(() => {
   for (let wrapper of document.querySelectorAll('div.userContentWrapper')) {
     if (wrapper.firstChild.textContent.search(/corona[ ]?virus/i) >= 0) {
-      let toRemove = findParentByClasses(wrapper, ['_4-u2', '_4-u8']);
+      let toRemove = findParentByClasses(wrapper, ['_5va1', '_427x'], true);
 
       if (toRemove == null) {
-        toRemove = findParentByClasses(wrapper, ['_5va1', '_427x']);
+        toRemove = findParentByClasses(wrapper, ['_4-u2', '_4-u8'], false);
       }
 
       if (debug) {
