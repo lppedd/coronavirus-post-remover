@@ -1,0 +1,37 @@
+{
+  "name": "coronavirus-post-remover",
+  "version": "0.1",
+  "description": "Coronavirus Post Remover",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --config webpack/webpack.dev.js --watch",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "clean": "rimraf dist",
+    "test": "npx jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lppedd/coronavirus-post-remover.git"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.91",
+    "@types/jest": "^24.9.1",
+    "@types/webpack": "^4.41.7",
+    "copy-webpack-plugin": "^5.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "ts-jest": "^24.3.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "~4.2.2"
+  }
+}
